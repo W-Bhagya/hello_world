@@ -1,5 +1,5 @@
 pipeline {
-    agent any 
+agent any 
         
         environment {
             USER_NAME = "bhagya"
@@ -13,7 +13,7 @@ pipeline {
                     echo "BUILD_NUMBER = ${env.BUILD_NUMBER}" 
                     sh 'echo BUILD_NUMBER = $BUILD_NUMBER'
                     
-                }
+               }
             }
             
             stage('Test') {
